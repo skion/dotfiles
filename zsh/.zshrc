@@ -62,7 +62,9 @@ plugins=(debian encode64 git git-extras history python svn)
 source $ZSH/oh-my-zsh.sh
 
 # Includes local or confidential bits
-source ~/.zshlocal
+if [ -f ~/.zshlocal ]; then
+    source ~/.zshlocal
+fi
 
 # Debian virtualenvwrapper
 if [ -f /etc/bash_completion.d/virtualenvwrapper ]; then
@@ -72,4 +74,4 @@ if [ -f /etc/bash_completion.d/virtualenvwrapper ]; then
 fi
 
 # Customize to your needs...
-export PATH=$PATH:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+export PATH=$PATH:/usr/local/bin:/usr/bin:/bin
