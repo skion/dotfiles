@@ -1,8 +1,8 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
-if [ -d ~/bin ] ; then
-    PATH=~/bin:"${PATH}"
+if [ -d ~/.bin ] ; then
+    PATH=~/.bin:"${PATH}"
 fi
 
 # Set name of the theme to load.
