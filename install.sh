@@ -5,3 +5,7 @@ git clone --recursive pieter@pooh.ennes.net:/home/pieter/repos/dotfiles.git ~/do
 cd dotfiles
 ls -l
 
+# Then use e.g.
+# $ cd ~/dotfiles
+# $ stow bin
+# $ stow ipython
