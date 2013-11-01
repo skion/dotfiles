@@ -27,9 +27,13 @@ alias df="df -h"
 alias grep="grep --color=auto"
 alias rgrep="grep --color=auto -HnR"
 alias apt-search="apt-cache search"
+alias apt-show="apt-cache show"
+alias apt-showpkg="apt-cache showpkg"
 alias apt-install="sudo apt-get install"
 alias apt-update="sudo apt-get update"
 alias apt-upgrade="sudo apt-get dist-upgrade"
+alias apt-remove="sudo apt-get remove"
+alias apt-purge="sudo apt-get remove --purge"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -72,6 +76,3 @@ if [ -f /etc/bash_completion.d/virtualenvwrapper ]; then
     export PIP_VIRTUALENV_BASE=$WORKON_HOME
     source /etc/bash_completion.d/virtualenvwrapper
 fi
-
-# Customize to your needs...
-export PATH=$PATH:/usr/local/bin:/usr/bin:/bin
