@@ -34,6 +34,8 @@ alias apt-update="sudo apt-get update"
 alias apt-upgrade="sudo apt-get dist-upgrade"
 alias apt-remove="sudo apt-get remove"
 alias apt-purge="sudo apt-get remove --purge"
+alias jsonpp="python -m json.tool"
+alias httpify="python -m SimpleHTTPServer"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
