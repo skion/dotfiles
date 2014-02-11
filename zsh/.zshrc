@@ -78,3 +78,9 @@ if [ -f /etc/bash_completion.d/virtualenvwrapper ]; then
     export PIP_VIRTUALENV_BASE=$WORKON_HOME
     source /etc/bash_completion.d/virtualenvwrapper
 fi
+
+# https://news.ycombinator.com/item?id=7213347
+hr() {printf '━%.0s' $(seq $COLUMNS)}
+
+export EDITOR=vim
+
