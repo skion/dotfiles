@@ -36,6 +36,8 @@ alias apt-remove="sudo apt-get remove"
 alias apt-purge="sudo apt-get remove --purge"
 alias jsonpp="python -m json.tool"
 alias httpify="python -m SimpleHTTPServer"
+alias ccat="colorize"
+alias cless="colorize | less"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
