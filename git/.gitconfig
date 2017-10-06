@@ -9,23 +9,12 @@
 	interactive = auto
 	ui = auto
 
-#[color "branch"]
-#	current = yellow reverse
-#	local = yellow
-#	remote = green
-#[color "diff"]
-#	meta = yellow bold
-#	frag = magenta bold
-#	old = red bold
-#	new = green bold
-#[color "status"]
-#	added = yellow
-#	changed = green
-#	untracked = cyan
-
 [merge]
 	summary = true
 	log = true
+
+[pull]
+        ff = only
 
 [push]
 	default = simple
@@ -67,3 +56,4 @@
 	reb = "!r() { git rebase -i HEAD~$1; }; r"
 	# http://stackoverflow.com/questions/15316601/why-is-git-pull-considered-harmful
 	up = "!git remote update -p; git merge --ff-only @{u}"
+
